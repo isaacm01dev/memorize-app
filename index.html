@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>MEMORYZE IT!!</title>
+</head>
+<body>
+ 
+  <!-- PAGE 1 INSERT CONCEPTS  -->
+  <div class="fullApp">
+    <div class="topBar">
+      <!-- <img src="images/test1.png"> -->
+      <img src="images/notes3.png">
+      <h1 class="title1">Ask yourself today's lesson!!</h1>
+    </div>
+
+    <!-- <h1 class="title1">ASK YOURSELF TODAY'S LESSON!!</h1> -->
+    <section class="userInput section">
+      <h4 class="title steps">Step 1 - Insert a concept, a question and its corresponding   answer :</h4>
+      <form action="" id="conceptsInputForm" class="form">
+        <br>
+       
+        <div class="formInput">
+          <label for="insertConcept"> * First, think about anything you would like to memorize :</label>
+          <input type="text" id="insertConcept" placeholder="  Add any concept you like...">
+          <div class="errorMsg">
+            <!-- <small class="errorMessage">Error message</small>   -->
+          </div>
+        </div>
+  
+        <br>
+
+        <div class="formInput">
+          <label for="insertQuestion">** Then add some question related to this subject :</label>
+          <input type="text" id="insertQuestion" placeholder="  Write your question here...">
+          <div class="errorMsg">
+            <!-- <small class="errorMessage">Error message</small>   -->
+          </div>
+        </div>
+
+     
+        <br>
+    
+        <div class="formInput">
+          <label for="insertAnswer">*** Finally, write the answer to that specific question :</label>
+          <textarea name="insertAnswer" id="insertAnswer" cols="10" rows="5" placeholder="  Write the corresponding answer here..."></textarea>
+          <div class="errorMsg">
+            <!-- <small class="errorMessage" >Error message</small>  -->
+          </div>
+        </div>  
+
+        <br> 
+      <div class="saveForm">
+        <button id="saveConceptBtn">Save Concept</button>
+      </div>
+   
+    </form>
+    <div class="addNewConcept">
+      <button id="addNewConceptBtn">Add New Concept</button>
+    </div>
+
+    
+          <!-- PAGE 2 MEMORIZER  -->
+  </section>
+  <br>
+  <section class="memorizer section">
+    <h4 id="goTryAgain" class="title steps">Step 2 - Give it a Try !! :</h4>
+    <p class="info">Click the following buttons to get random concepts and questions...</p>
+    <div class="gridRandomOutput">
+
+      <div class="showOutput">
+          <p id="showRandomConcept"></p>
+  
+          <button id="randomConceptBtn">Concept</button>
+        </div>
+
+        <div class="showOutput">  
+          <p id="showRandomQuestion"></p>       
+          <button id="randomQuestionBtn">Question</button>
+        </div>
+        
+        <div class="showOutput">       
+          <p id="showRandomClue"></p>      
+          <button id="randomClueBtn">Clue</button>
+        </div>
+        
+      <h4 class="title rightAnswer">Here's the right answer :</h4>
+      <div class="rightAnswerIs showOutput">
+        <p id="showAnswer">Here you can display the corresponding answer...</p>
+      </div>
+    </div> 
+
+      <div class="answerButtons"> 
+        <button id="showAnswerBtn" class="answerBtn">Show Answer</button>
+        <button id="clearAnswerBtn" class="answerBtn">Clear Answer</button>
+     </div>
+
+  </section>
+  
+          <!-- PAGE 3 SHOW CONCEPTS LIST  -->
+  <section class="showList section">
+    <div class="checkList">
+      <h4 class="title checkList">Check your concepts list so far :</h4>
+    </div>
+    <div id="showConceptsList">
+      <div class="conceptsList form">
+         <p id="conceptsList"></p>
+      </div>
+    </div>
+
+    <div class="showListBtn">
+      <button id="showConceptsListBtn">Show Concepts List</button>
+      <button id="clearConceptsListBtn">Hide Concepts List</button>
+    </div>
+
+  </section>
+  
+  
+  <!-- TRY AGAIN  -->
+  <section class="tryAgainSection">
+    <h4 class="title try">You Can Always Try Again... </h4>
+       <div class="tryAgainButton">
+        <button id="tryAgain"><a href="#goTryAgain">Try Again!!</a></button>
+      </div>
+  </section>
+
+   <script src="script.js"></script> 
+ 
+</body>
+</html> 
