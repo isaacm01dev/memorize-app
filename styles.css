@@ -151,7 +151,7 @@ textarea:focus::placeholder {
   margin-bottom: 5vh;
   background-color: var(--appBgColor);
   display: block;
-  min-width: 75vw;
+  min-width: 70vw;
   height: auto;
   align-items: center;
   justify-content: space-around;
