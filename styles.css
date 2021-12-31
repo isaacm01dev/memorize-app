@@ -156,7 +156,6 @@ textarea:focus::placeholder {
   align-items: center;
   justify-content: space-around;
   justify-items: center;
-  /* box-shadow: x, y, blur, spread >>> todo en pixels; */
   box-shadow: 10px 5px 10px 10px rgba(0, 0, 0, 0.144);
   border: 1px solid rgba(0, 0, 0, 0.233);
   border-radius: 5px;
