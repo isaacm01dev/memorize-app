@@ -41,7 +41,7 @@ function inputConcepts(e) {
   e.preventDefault(); 
 
   if (insertConcept.value === '' || insertQuestion.value === '' || insertAnswer.value === '') {
-  //  MUST CHANGE THIS ALERT
+  //  MUST CHANGE THIS ALERT!!
    alert('Please fill in all required fields before saving');
 
   } else {
@@ -105,35 +105,33 @@ let displayConcept = function() {
 
 // RANDOM QUESTION BUTTON : ***********************************************
 
-let questionObjects = [];  // INICIALIZAMOS ESTE ARRAY VACIO PARA ALMACENAR COINCIDENCIAS DE OBJETOS UQE CUMPLAN
+let questionObjects = [];  
 
 let saveQuestionObjects = function() {  
-  deleteArrayContent();  // NOS ASEGURAMOS UQE EL ARRAY EMPIEZA VACIO
-  objectsListArr.forEach(obj => { // ITERAMOS EN EL ARRAY DE INPUTS Y FILTRAMOS LOS QUE CUMPLEN 
+  deleteArrayContent();  
+  objectsListArr.forEach(obj => { 
     if (obj.concept === rdmConcept) { 
-      questionObjects.push(obj); //GUARDAMOS LOS OBJETOS DE INPUTS UQE CUMPLEN EN ESTE ARRAY
+      questionObjects.push(obj); 
     } 
   }); 
   return questionObjects;
 }
 
-// NO SE BIEN COMO PONER EL ARRAY A CERO 
+
 // ...................................
 function deleteArrayContent() {
   questionObjects = [];
 }
 // ...................................
 
-// DE ENTRE LOS OBJETOS QUE CUMPLEN ELEGIMOS UNO ALEATORIAMENTE, UN OBJETO!!
-
 let getRandomQuestionObject = function() {
   let rdmQuestionObj = questionObjects[Math.floor(Math.random() * questionObjects.length)];
   return rdmQuestionObj; // retornamos para obtener un resultado al llamar a esta funcion
 }
 
-// OBJETO 
-let randomQuestionObject = {}; // este es el objeto elegido aleatoriamente
-// PROPIEDAD 
+// OBJECT 
+let randomQuestionObject = {}; 
+// PROP 
 let randomQuestion; 
 
 let displayRandomQuestion = function() { 
